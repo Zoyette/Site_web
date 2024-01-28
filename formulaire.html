@@ -1,0 +1,70 @@
+<!DOCTYPE html><!--commentaire-->
+<html lang="fr"><!--référencé en France-->
+<head><!--balise ouvrante-->
+    <meta charset="UTF-8"><!--encodage du site internet (caractères spéciaux)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--affichage du site-->
+    <title>Formulaire de contact</title><!--titre dans l'onglet du navigateur-->
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="shortcut icon" type="image/png" href="image/dino.webp"/>
+</head> 
+<header>
+    <div class="menu-burger">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div> <!-- fait apparaitre des barres -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-menu">
+            <li><h2><a href="index.html">Accueil</a></h2></li>
+            <li><h2><a href="peppaperso.html">Personnages</a></h2></li>
+            <li><h2><a href="peppahistoire.html">Histoire</a></h2></li>
+            <li><h2><a href="formulaire.html">Formulaire</a></h2></li>
+            <li><h2><a href="carousel.html">Carousel</a></h2></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <h1>Formulaire</h1>
+    <form action="" id="inscription">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom"name="nom">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom"name="prenom">
+        <label for="mdp">Mot de passe</label>
+        <input type="password" id="mdp">
+        <label for="mail">Email</label>
+        <input type="email" id="mail">
+        <fieldset>
+            <legend>Genre</legend>
+            <label for="f">Femme</label>
+            <input type="radio" name="genre" id="f" value="femme"><br>
+            <label for="h">Homme</label>
+            <input type="radio" name="genre" id="h" value="homme"><br>
+            <label for="a">Autre</label>
+            <input type="radio" name="genre" id="a" value="autre"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Personnage Pig préféré</legend>
+            <select name="" id="">
+                <option value="pp">Peppa Pig</option>
+                <option value="gp">Georges Pig</option>
+                <option value="mp">Maman Pig</option>
+                <option value="pap">Papa Pig</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Commentaire</legend>
+            <label for=""></label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <label for="">Couleur</label>
+            <input type="color" name="" id="">
+        </fieldset>
+            <input type="submit" value="Valider" id="valider">
+            <input type="reset" value="Effacer">
+    </form>
+    <button>Changez la couleur</button>
+    <script src="java/script.js"></script>
+    
+</body>
+</html>

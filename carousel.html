@@ -1,0 +1,50 @@
+<!DOCTYPE html><!--commentaire-->
+<html lang="fr"><!--référencé en France-->
+<head><!--balise ouvrante-->
+    <meta charset="UTF-8"><!--encodage du site internet (caractères spéciaux)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--affichage du site-->
+    <title>Carousel</title><!--titre dans l'onglet du navigateur-->
+    
+    <link rel="stylesheet" href="css/stylel.css">
+    <link rel="shortcut icon" type="image/png" href="image/dino.webp"/>
+</head> 
+<header>
+    <div class="menu-burger">
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div> <!-- fait apparaitre des barres -->
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-menu">
+            <li><h2><a href="index.html">Accueil</a></h2></li>
+            <li><h2><a href="peppaperso.html">Personnages</a></h2></li>
+            <li><h2><a href="peppahistoire.html">Histoire</a></h2></li>
+            <li><h2><a href="formulaire.html">Formulaire</a></h2></li>
+            <li><h2><a href="carousel.html">Carousel</a></h2></li>
+        </ul>
+    </div>
+</header>
+<body>
+    <script src="java/carousel.js"></script> 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <swiper-container class="mySwiper" navigation="true" pagination="true" effect="flip" grab-cursor="true">
+        <swiper-slide>
+        <img src="image/70_9782017237389_1_75.jpg" id="image1" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="image/pot.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="image/piscine.jpg" />
+        </swiper-slide>
+        <swiper-slide>
+        <img src="image/poisson.webp" />
+        </swiper-slide>
+    </swiper-container>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/*on applique des proprietées CSS a la taille d ecran au dessus de 1024px  */
+body{
+    background-color: #76d3d3;
+}
+
+p{
+    color: blue;
+}
+
+
+
+@media screen and (max-width: 1024px){/* Nouvelles règles si la fenêtre fait  1024px de large ou moins */
+    body{
+        background-color: antiquewhite;
+    }
+    .resp{
+        color:red;
+        /* display: none; */
+    }
+    img{
+        display: none;
+    }
+}
+
+
+ @media all and (max-device-width: 480px)/*pour le mobile on va utiliser le max-device-width car cela permet de cibler la largeur de l ecran */
+{
+    body{
+        background-color: blueviolet;
+    }
+    p{
+        color: green;
+    }
+    .resp{
+        color: yellow;
+    }
+
+}
+
+/*point de rupture
+Desktop : au delà de 1024 pixels
+Tablette : entre 600 et 1024 pixels (en mode portrait)=>800
+Mobile : entre 320 et 600 pixels (en mode portrait)=>480
+cela sont des moyennes de tailles d ecran */
+/* @media (min-width:320px)  { smartphones, iPhone, portrait 480x320 phones  }*/
+/* @media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide.  }*/
+/*@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones  }*/
+/*@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops  }*/
+/*@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops  }*/
+/*@media (min-width:1281px) {  hi-res laptops and desktops  }*/
+
+/* @media screen and(min-width:200px) and (max-width:780px){
+} */

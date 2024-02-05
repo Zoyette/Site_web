@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Peppa Pig';
+    src: url(../font/Peppa\ Pig.ttf);
+}
+@font-face {
+    font-family: 'Texte';
+    src: url(../font/GlassAntiqua-Regular.ttf);
+}
+header {
+    margin: 0;
+    font-family: 'Peppa Pig';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body {
+    position: relative;
+    height: 100%;
+    }
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    }
+
+swiper-container {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+
+
+.menu-burger {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFA1D5;
+    color: aliceblue;
+}
+
+/* Styles pour l'icône du menu burger */
+.burger-menu {
+    cursor: pointer;
+    display: none; /* Masqué par défaut sur les écrans plus larges */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 6px 0;
+    transition: 0.4s; /* Animation de transition pour les barres du burger */
+}
+
+/* Styles pour la liste de navigation */
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* Styles spécifiques pour les écrans plus petits (moins de 600px) */
+@media only screen and (max-width: 600px) {
+    .burger-menu {
+        display: block; /* Affiché sur les écrans plus petits */
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #3f3a3a;
+        width: 100%;
+    }
+
+    .nav-menu.show {
+        display: flex;
+    }
+}
+

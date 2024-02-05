@@ -1,0 +1,170 @@
+css
+
+/* j effectue un test avec la balise body afin de voir si mon fichier CSS es bien relier a mon HTML exemple ci*-dessous*/
+
+ /* body{
+     background-color: blue; 
+} */
+
+h1{
+    text-align: center;/*ici j aligne mon titre au milieu de la page*/
+    font-family: 'Hachi Maru Pop', cursive;/*font family permet de changer la police d ecriture  attention a bien mettre le link dans le head de ma page html*/
+}
+
+
+ul{
+    padding: 0px;
+    list-style-type: none;
+    border: 2px dashed black;
+}
+
+li{
+    padding: 2em; 
+}
+li.a{
+    background-color: red;
+}
+
+li.b{
+    background-color: blue;
+}
+
+li.c{
+    background-color: green;
+}
+li.d{
+    background-color: purple;
+}
+
+li.e{
+    background-color: yellow;
+}
+
+li.f{/*ici on cible la balise <li> qui a la class .f*/
+    background-color: grey;
+}
+
+.test1{
+    display:flex; 
+    /*le flex de base es en ligne(row)*/
+    /* flex-direction: row; */
+}
+
+
+
+
+
+
+.test2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.test3{
+    display: flex;
+    flex-direction: column;
+}
+
+.test4{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.test5{
+    display: flex;
+    width: 240px;
+    flex-wrap: nowrap;
+}
+
+.test6{
+    display: flex;
+    width: 240px;
+    flex-wrap: wrap;
+}
+
+.test7{
+    display: flex;
+    align-items: center;
+}
+
+.test7 .b{/*je selectionne ma liste7 par le biais de sa classe plus precisement je vais selectionner dans cette liste le <li> qui a la classe b*/
+    line-height: 4em;/*hauteur de mon <li>*/
+}
+
+.test7 .d{
+    line-height: 4em;
+}
+
+.test8{
+    display: flex;
+    align-items: flex-start;
+}
+
+.test8 .b{
+    line-height: 4em;
+}
+
+.test8 .e{
+    line-height: 4em;
+}
+
+.test9{
+    display: flex;
+    align-items: flex-end;
+}
+
+.test9 .b{
+    line-height: 4em;
+}
+
+.test9 .e{
+    line-height: 4em;
+}
+
+.test10{
+    display: flex;
+    justify-content: center;
+}
+
+.test11{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.test12{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.test13{
+    display: flex;
+    justify-content:space-between;
+}
+
+.test14{
+    display: flex;
+    justify-content:space-around;
+}
+
+#around{
+    font-family: 'Hachi Maru Pop', cursive;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+}
+/* page contact */
+.titre{
+    font-size: 25px;
+}
+
+.corp{
+    background-color: chartreuse;
+}
+
+/*ligne de commentaire
+il commence avec slash etoile(/*)
+se termine avec etoile slash
+peut etre sur plusieurs lignes*/
+/*attention au traducteur automatique sur le navigateur*/

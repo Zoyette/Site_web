@@ -1,0 +1,52 @@
+/*commentaires*/
+/*Syntaxe du CSS
+
+selecteur{
+propriete: valeur;
+propriete: valeur;
+propriete: valeur;
+propriete: valeur;
+
+}
+*/
+body{
+    background-color: #8d8bdf;
+    /*background-image: url(image/peppaaa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    => pour mettre une image en arrière plan
+    */
+}
+h1{
+    color: aliceblue;
+    text-align:center;
+}
+h2{
+    color: chartreuse;
+}
+p{
+    color: rgb(186, 241, 158);
+}
+#para{
+    color: rgb(210, 217, 6);
+}
+.kaki{
+    color: #324e25;
+}
+ul{
+    list-style-type: none; /*pour enlever les points*/
+}
+
+table{
+    border: 2px solid rgb(233, 176, 185);
+    border-collapse: collapse; /*pour tout rejoindre; plus joli sans*/
+}
+td{
+    border: 2px solid rgb(233, 176, 185);
+}
+th{
+    border: 2px solid rgb(233, 176, 185);
+}
+.orange{
+    background-color: brown;
+}

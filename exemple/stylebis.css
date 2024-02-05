@@ -1,0 +1,25 @@
+body{
+    background-color: #8d8bdf;
+}
+h1{
+    color: aliceblue;
+    text-align:center;
+}
+h2{
+    color: rgb(210, 227, 241);
+}
+p{
+    color: rgb(139, 174, 203);
+}
+
+
+table{
+    border: 2px solid rgb(233, 176, 185);
+
+}
+td{
+    border: 2px solid rgb(233, 176, 185);
+}
+th{
+    border: 2px solid rgb(233, 176, 185);
+}
